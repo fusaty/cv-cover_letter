@@ -1,0 +1,283 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Ing. Michal Fusatý} \\ \vspace{3pt}
+    \small +420 727 935 594 $|$ \href{mailto:fusaty@proton.me}{\underline{fusaty@proton.me}} \\ \vspace{2pt}
+\end{center}
+
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {\href{https://www.fei.stuba.sk/en}{Slovak University of Technology}}{Bratislava, Slovakia}
+      {Master's in Computer Science}{September 2018 -- May 2023}
+    \resumeSubheading
+      {\href{https://gymziar.edupage.org/}{Gymnázium Milana Rúfusa}}{Žiar nad Hronom, Slovakia}
+      {High School Education}{September 2014 -- June 2018}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Cybersecurity Engineer}{February 2023 -- Present}
+       {\href{https://www.framatome.com/en/}{Framatome}}{Prague, Czech Republic}
+      \resumeItemListStart
+        \resumeItem{Hardened Linux/Windows I\&C systems in nuclear power plants in France/Czechia/Slovakia through vulnerability assessments and configuration management.}
+        \resumeItem{Translated customer and regulatory requirements into technical controls with full traceability.}
+        \resumeItem{Scripted and validated hardening procedures to automate configuration enforcement and compliance testing.}
+        \resumeItem{Authored cybersecurity deliverables including risk analyses, concept documents, and annual compliance reports.}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+ 
+       \vspace{4pt}
+    {\small\textit{Note: The following positions were held part-time during my studies.}}
+    \vspace{2pt}
+    
+    \resumeSubheading
+    {Software Engineer}{March 2022 - December 2022}
+     {\href{https://www.softec.sk/en}{SOFTEC}}{Bratislava, Slovakia}
+    \resumeItemListStart
+        \resumeItem{Contributed to the development and deployment of multiple full-stack web applications, utilizing Java, Javascript, and AngularJS.}
+    \resumeItemListEnd
+    
+    \resumeSubheading
+    {System Application Administrator}{October 2021 - March 2022}
+     {\href{https://www.tatrabanka.sk/en/}{Tatra Banka}}{Bratislava, Slovakia}
+    \resumeItemListStart
+        \resumeItem{Monitored systems and responded to incidents using Nagios, Dynatrace, and Splunk, while managing and maintaining Linux servers (Debian, Ubuntu, RHEL).}
+    \resumeItemListEnd
+    
+    \resumeSubheading
+    {IT Monitoring Specialist}{January 2020 - October 2021}
+     {\href{https://www.opmobility.com/en/}{OPmobility}}{Lozorno, Slovakia}
+    \resumeItemListStart
+        \resumeItem{Managed and optimized Centreon and Nagios systems for effective real-time monitoring, while administering both Linux and Windows servers.}
+    \resumeItemListEnd
+    
+    \resumeSubheading
+    {Assistant in the IT department}{June 2018 - September 2018}
+     {\href{https://www.ksystem.eu/}{K-system}}{Žiar nad Hronom, Slovakia}
+      \resumeItemListStart
+        \resumeItem{Provided technical support for hardware and software issues, assisted with network administration, including Active Directory management, and configuration of IT equipment.}
+    \resumeItemListEnd
+    
+%-------------------------------------------
+
+
+  \resumeSubHeadingListEnd
+
+
+
+%-----------CERTIFICATES-----------
+\section{Certifications}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{\href{https://drive.proton.me/urls/K3QKHE62EM\#60PmC5oL7gQH}{Red Hat Certified System Administrator}} $|$ \emph{Verification: 250-029-444} }{earned March 2025}
+          \resumeItemListStart
+            \resumeItem{Certification showcasing RH Linux administration skills.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{\href{https://drive.proton.me/urls/WQCXTSR8C0\#8HdkpbN5AP9T}{Virtual Hacking Labs}} $|$ \emph{Verification: 245441540 and 244902007} }{earned August 2024}
+          \resumeItemListStart
+            \resumeItem{Hands-on penetration testing certifications.}
+          \resumeItemListEnd
+    \resumeProjectHeading
+          {\textbf{\href{https://drive.proton.me/urls/0MFCTG9R1W\#d9Em1lgeyORn}{Comptia Network+}} $|$ \emph{Verification: 2VGEEJS6HFR4QJK6} }{earned May 2024}
+          \resumeItemListStart
+            \resumeItem{Vendor-neutral networking certification.}
+          \resumeItemListEnd
+    \resumeProjectHeading
+          {\textbf{\href{https://drive.proton.me/urls/TRGRCY96SR\#3wtGCbwKKhTa}{Comptia Security+}} $|$ \emph{Verification: 5QQ1FCKTKB4QQR9C} }{earned January 2024}
+          \resumeItemListStart
+            \resumeItem{Entry-level IT security certification.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{\href{https://opac.crzp.sk/?fn=detailBiblioForm\&sid=C0DEB8E07572332BAD240C15805F}{Cyberattack detection using state languages}} }{September 2022 - May 2023}
+          \resumeItemListStart
+            \resumeItem{Designed and implemented cyberattack detection software using state-based programming languages, guided by MITRE ATT\&CK techniques. The solution is deployed within \href{https://csirt.fei.stuba.sk/en/}{CSIRT} of Slovak University of Technology.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{\href{https://feictf.xyz/}{Teaching aid for CTF competitions}} }{September 2021 - June 2022}
+          \resumeItemListStart
+            \resumeItem{Created, deployed and maintained infrastructure for organizing CTF competitions (based on the pwn.college portal), still used to teach \href{https://uim.fei.stuba.sk/predmet/i-bispp/}{Information Systems Security} subject at Slovak University of Technology.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming/Scripting}{: Python, Bash, PowerShell} \\
+     \textbf{Markup/Style}{: LaTeX, HTML, CSS} \\
+     \textbf{Databases}{: SQL} \\
+     \textbf{Version Control}{: Git (GitLab, GitHub, Sourcetree) } \\
+     \textbf{Containerization}{: Docker, Podman } \\
+     \textbf{Automation}{: Ansible } \\
+     \textbf{Security Tools}{: Metasploit, OpenVAS, BurpSuite } \\
+     \textbf{Productivity/Office Tools}{: Microsoft Office (Word, Excel, PowerPoint), LibreOffice, Jira, SharePoint } \\
+    }}
+ \end{itemize}
+
+%-----------Languages-----------
+\section{Spoken Languages}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Slovak \& Czech}{: native proficiency} \\
+     \textbf{English}{: professional working proficiency} \\
+     \textbf{German \& French}{: elementary proficiency} \\
+    }}
+ \end{itemize}
+
+%-----------Additioal-----------
+\section{Additional Information}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Driver's Licence}{: Categories AM, A1, B1, B.} \\
+     \textbf{Open-source contributor}{: Provided translations for Pop!\_OS, CherryTree, and Battle for Wesnoth projects.} \\
+     \textbf{Availability}{: Available to start with up to 2 months’ notice; open to relocation.} \\
+     \textbf{Security Clearance:} No active clearance; eligible for EU-level vetting. \\
+    %\textbf{Currently working on}{: OSCP certification.} \\
+    }}
+ \end{itemize}
+
+ 
+%-----------Links-----------
+\section{Selected Links}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Personal website}{: \href{https://fusaty.github.io/}{fusaty.github.io}} \\
+     \textbf{Github profile}{: \href{https://github.com/fusaty}{github.com/fusaty}} \\
+     \textbf{TryHackMe profile}{: \href{https://tryhackme.com/p/michal.fusaty}{tryhackme.com/p/michal.fusaty}} \\
+     \textbf{LinkedIn profile}{: \href{https://linkedin.com/in/michal-fusatý-a41488252}{linkedin.com/in/michal-fusatý-a41488252}} \\
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}
